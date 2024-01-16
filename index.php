@@ -2,8 +2,7 @@
 require_once __DIR__ . '/database/db.php';
 
 
-var_dump($cani);
-var_dump($mioGatto);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,10 +26,13 @@ var_dump($mioGatto);
                     <div>
                         <?php if(is_a($prodotto, 'Cibo')) {?>
                         <p> <?php echo $prodotto->getGusto(); ?></p>
-                        <?php } else if (is_a($prodotto, 'Giocatolo')) {?>
+                        <?php } else if (is_a($prodotto, 'Giocattolo')) {?>
                             <p> <?php echo $prodotto->getMateriale() ?></p>
-                            
-                       <?php } ?>
+                        <?php } ?>  
+                        
+                        <p>prezzo <?php echo $prodotto->getprezzo() ?>€</p>
+                        <span>quantita <?php echo $prodotto->getQuantita() ?>pz</span>
+                     
                      
                     </div>
                 </div>

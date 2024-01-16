@@ -28,14 +28,14 @@ class Prodotto
         $this->prezzo = $prezzo;
     }
 
-    public function getprezzo($prezzo){
+    public function getprezzo(){
         return $this->prezzo ;
     }
 
     /**
      * Get the value of quantita
      */ 
-    public function getcategoria($Categoria)
+    public function getcategoria()
     {
         return $this->categoria;
     }
